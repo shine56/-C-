@@ -24,11 +24,15 @@ void show2(int m);               //速度选择界面
 
 int main()
 {
-	
-	gamestart(a); 
-	changevelocity(); 
-	gameplay(a);
-	gameover();
+	char flag='s';
+	while(flag=='s')
+	{
+		gamestart(a); 
+		changevelocity(); 
+		gameplay(a);
+		gameover();
+		flag = getch();
+	}
 	
 	return 0;
 }
@@ -41,8 +45,11 @@ void gotoxy(int x, int y)//位置函数
 	SetConsoleCursorPosition(handle, pos);
 } 
 
-void gamestart(int (*a)[K]) //初始化开始画面 
+void gamestart(int (*a)[K]) //初始化开始画面 与数据 
 {
+	score = 0;
+	ko=-6; foodsum=0; V=300;
+	
 	int i, j, k;
 	for(i=0; i<H-2; i++)
 	{
@@ -119,6 +126,23 @@ void show(int (*a)[K])//游戏显示
 		printf("\n");
 	}
 	//getchar();
+}
+
+void show2(int m) 
+{
+	int i;
+	gotoxy(55, 7);
+	printf("【"); 
+	for(i=0; i<m; i++)
+	{
+		printf("■");
+	}
+	for(i=0; i<(8-m); i++)
+		printf("  ");
+	printf("】");
+	gotoxy(58, 8);
+	printf("-   回车确认  +");
+	
 }
 
 void gameplay(int (*a)[K])        //游戏中 
@@ -247,23 +271,30 @@ void changevelocity()
 	char ve, ch;
 	ch=getch();
 	show2(m);
-	if(ch=='j')
+	if(ch=='j' || ch=='J')
 	{
 		while(1)
 		{
+			int flag=1;
 			ve=getch();
 			if(ve=='=')
 			{
-				V-=50;
+				if(V<=0)
+					flag=0;
+				else
+					V-=50;
 				m++;
-				if(V<=350 && V>=0)
+				if(V<=350 && flag==1)
 				show2(m);
 			}
 			if(ve=='-')
 			{
-				V+=50;
+				if(V>=350)
+					flag=0;
+				else
+					V+=50;
 				m--;
-				if(V<=350 && V>=0)
+				if(V<=350 && flag==1)
 				show2(m);
 			}
 			if(ve==13)
@@ -283,23 +314,12 @@ void gameover()
 	printf("GAME OVER!");
 	gotoxy(50, 13);
 	printf("你的得分：%d", score);
+	gotoxy(49, 15);
+	printf("【s】键再玩一局");
+	gotoxy(49, 17);
+	printf("其他键结束游戏"); 
 }
 
-void show2(int m)
-{
-	int i;
-	gotoxy(55, 7);
-	printf("【"); 
-	for(i=0; i<m; i++)
-	{
-		printf("■");
-	}
-	for(i=0; i<(8-m); i++)
-		printf("  ");
-	printf("】");
-	gotoxy(58, 8);
-	printf("-   回车确认  +");
-	
-}
+
  
 
