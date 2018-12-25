@@ -265,11 +265,21 @@ void food(int (*a)[K])//生成新的食物
 		a[fx][fy]=-2;
 }
 
-void changevelocity()
+void changevelocity()         //改变速度
 {
 	int m=2;
 	char ve, ch;
-	ch=getch();
+	while(1)
+    {
+        ch=getch();
+        if(ch=='j' || ch=='J')
+            break;
+        else
+        {
+            gotoxy(40, 4);
+            printf("请设置输入为英文状态且先选择速度！");
+        }
+    }
 
 	if(ch=='j' || ch=='J')
 	{
@@ -308,7 +318,7 @@ void changevelocity()
 	}
 }
 
-void gameover()
+void gameover()             //游戏结束
 {
 	//system("cls");
 	gotoxy(50, 12);

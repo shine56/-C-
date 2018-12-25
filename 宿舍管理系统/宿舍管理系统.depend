@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1544969764 source:c:\users\73233\desktop\devc++\宿舍管理系统\showlogin.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1544965862 source:c:\users\73233\desktop\devc++\宿舍管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+
+1545137136 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\showlogin.c
+	<stdio.h>
+	"All.h"
+	<windows.h>
+
+1545655266 c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\all.h
+
+1545662114 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"All.h"
+
+1545140210 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\signup.c
+	<stdio.h>
+	"All.h"
+	<windows.h>
+	<conio.h>
+
+1545140482 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\login.c
+	<stdio.h>
+	"All.h"
+	<windows.h>
+
