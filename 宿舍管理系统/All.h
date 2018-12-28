@@ -15,8 +15,8 @@ void Update();                                //修改学生信息
 void DeleteStu();                             //删除寝室信息
 int UpdateAccount(int flag);              //修改个人信息
 void Feed();                                   //学生反馈信息
-void UpdateCon();                                           //修改反馈内
-int OPENAccFile();
+void UpdateCon();                                           //修改反馈信息
+
 
 struct Account                                               //注册账号的结构体数组
 {

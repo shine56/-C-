@@ -32,7 +32,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="All.h" />
-		<Unit filename="main.c">
+		<Unit filename="宿舍管理系统.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

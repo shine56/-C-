@@ -321,6 +321,7 @@ void showTeaMenu(int flag)            //教师功能菜单
             d=UpdateAccount(flag);
             if(d==0)
                 return ;
+            break;
         }
     }
 }
@@ -386,8 +387,7 @@ void AddStuIfor()        //录入学生信息
         fclose(fa);
         gotoxy(LIE+6, HANG+12);
         printf("录入学生信息成功！任意键返回。");
-        char g;
-        g=getch();
+        getch();
     }
 }
 void Lookup()               //查询学生信息
@@ -1013,8 +1013,7 @@ void ShowFeedAllList()            //显示所有学生信息
 
     system("cls");
     int i, j, x=23, y=4, c=1;
-    printf("\n\t学生反馈的信息如下：");
-    for(i=0; i<FM; i++)
+    for(i=FM-1; i>-1; i--)
     {
         for(j=i-1; j>-1; j--)
         {
@@ -1024,7 +1023,7 @@ void ShowFeedAllList()            //显示所有学生信息
                 break;
             }
         }
-        if(c==1)
+        if(c == 1)
         {
             gotoxy(x+33, y-2);
             printf("%s\n", feed[i].DorNum);
@@ -1035,8 +1034,11 @@ void ShowFeedAllList()            //显示所有学生信息
         c=1;
     }
     printf("\n\n\n\n\n\n\n\n\t\t");
+    gotoxy(2, 2);
+    printf("【按反馈时间先后排序】");
+    gotoxy(2, 6);
     printf("任意键返回菜单");
-    char ch=getch();
+    getch();
     return;
 }
 

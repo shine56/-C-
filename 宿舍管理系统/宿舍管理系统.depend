@@ -15,7 +15,7 @@
 	"All.h"
 	<windows.h>
 
-1545655266 c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\all.h
+1545995249 c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\all.h
 
 1545662114 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\main.c
 	<stdio.h>
@@ -36,4 +36,13 @@
 	<stdio.h>
 	"All.h"
 	<windows.h>
+
+1545996567 source:c:\users\73233\desktop\c语言学习\课设\宿舍管理系统\宿舍管理系统\宿舍管理系统.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"All.h"
 
