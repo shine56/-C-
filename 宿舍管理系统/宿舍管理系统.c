@@ -14,6 +14,25 @@ int LENf=sizeof(feed[0]);                   //反馈条数的结构体大小
 
 int main()
 {
+    /*********创建相关文件***********************************************/
+    FILE *fk, *fi, *fj;
+    if((fi = fopen("faccount.txt", "ab+")) ==  NULL)
+    {
+        printf("不能创建文件！");
+    }
+    fclose(fi);
+     if((fj = fopen("Student Information.txt", "ab+")) ==  NULL)
+    {
+        printf("不能创建文件！");
+    }
+    fclose(fj);
+    if((fk = fopen("feedcontext.txt", "ab+")) ==  NULL)
+    {
+        printf("不能创建文件！");
+    }
+    fclose(fk);
+
+    /********************************************************************/
     int a;                   //控制注册，登录或者退出
     system("color b0");
     while(1)
