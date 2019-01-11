@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1547088324 source:c:\users\73233\desktop\课程设计\考勤管理系统\psqrya4e8\ 考勤管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1547177660 source:c:\users\73233\课程设计\考勤管理系统\psqrya4e8\ 考勤管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1547193970 source:c:\users\73233\课程设计\考勤管理系统\考勤管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
