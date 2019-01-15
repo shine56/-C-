@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1547387450 source:c:\users\73233\desktop\c语言学习\课设\俄罗斯方块\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+	<time.h>
+
